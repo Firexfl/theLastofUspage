@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(./img/elliemain.png);
+    /*background-repeat: no-repeat; Para que la imagen no se repita si es pequeña*/
+    background-attachment: fixed;/* Determina si la posición de la imagen de fondo será fija
+    dentro de la pantalla o se desplazará con su bloque contenedor */
+    background-size: cover;/* especifica el tamaño de las imágenes de fondo */
+    width: 100vw;
+    height: 100vh;
+    /*overflow-x: hidden; Quitar el overflow horizontalmente */
+}
+
+.logo{
+    width: 250px;
+    height: 100px;
+    margin-top: 0;
+    /* Quitar fondo de imagen */
+    filter: brightness(1.1);
+    mix-blend-mode: color-dodge;
+}
+
+.the-last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-parent{
+    width: 35%;
+    border-radius: 20px;
+}
+/* .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.nav a{
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav li{
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.nav li :hover{
+    color: gray;
+}
+
+.nav li :active{
+    color: maroon;
+}
+
+.box-parent{
+    display: inline-block;
+    width: 30vw;
+    height: 80vh;
+    position: absolute;/* absolute */
+}
+
+.box .aside1{
+    display: inline-block;/* block */
+    background-size: cover;
+    border-radius: 50%;
+    width: 80%;
+    width: 340px;
+    height: 400px;
+    filter: brightness(1.1);
+    mix-blend-mode: color-burn;
+    /* height: 110px; */
+    position: relative;
+    left: 10%;
+    margin: 5px;
+}
+.principal{
+   /*  display: inline-block; */
+    font-size: 2rem;
+    position: relative;
+    left: 30%;
+    height: 80vh;
+    width: 70vw;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    height: 500px;
+    padding-left: 30%;
+    color: white;
+}
+
+.footer{
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.social img{
+    display: inline-block;
+    width:48px;
+	top:50px;
+	right:0;
+    margin: 1rem;
+    filter: brightness(1.1);
+    mix-blend-mode: color-burn;
+
+}
+
+iframe{
+    align-items: center;
+    width: 100%;
+}
